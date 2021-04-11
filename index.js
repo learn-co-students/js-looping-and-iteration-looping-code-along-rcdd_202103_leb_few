@@ -1,17 +1,18 @@
 // Code your solutions in this file
-const name = ["Ada","Brendan","Ali"];
-const birthday;
-const nb=10;
-function writeCards(name,birthday)
+function writeCards(name,event)
 {
+   var msg = new Array();
   for(let i=0;i<name.length;i++)
   {
-   console.log("Thank you,${name[i]} for the wonderful" +birthday+ "gift");
+   msg[i]=('Thank you,'+' ' +name[i]+','+ ' for the wonderful '  +event+  ' gift!');
  }
+ return msg;
 }
+writeCards(["Ada", "Brendan", "Ali"], "birthday");
 function countDown(nb){
-  while(i>=0){
+  while(nb>= 0){
     console.log(nb);
-    i--
+    nb--
   }
 }
+countDown(10);
