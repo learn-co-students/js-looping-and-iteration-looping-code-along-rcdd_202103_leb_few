@@ -6,7 +6,7 @@ function writeCards(name,birthday)
 {
   for(let i=0;i<name.length;i++)
   {
-   console.log("Thank you,${name[i]} for the wonderful ${birthday} gift");
+   console.log("Thank you,${name[i]} for the wonderful" +birthday+ "gift");
  }
 }
 function countDown(nb){
